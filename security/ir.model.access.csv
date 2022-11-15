@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_vr_epsas_activos_fijos_vr_epsas_activos_fijos,vr_epsas_activos_fijos.vr_epsas_activos_fijos,model_vr_epsas_activos_fijos_vr_epsas_activos_fijos,base.group_user,1,1,1,1

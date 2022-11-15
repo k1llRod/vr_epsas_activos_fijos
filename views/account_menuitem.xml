@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+      <!-- Top menu item -->
+      <menuitem name="Activos fijos" id="activos_fijos.menu_root" groups="group_activos_fijos_administrator,group_activos_fijos_user"/>
+      <!-- menu categories -->
+
+      <menuitem id="activos_fijos_menu_main" name="Activos" parent="activos_fijos.menu_root" action="account_asset.action_account_asset_form" sequence="1"/>
+      <menuitem id="activos_fijos_menu_accounting" name="Contabilidad" parent="activos_fijos.menu_root" groups="group_activos_fijos_administrator" sequence="2"/>
+      <menuitem id="activos_fijos_menu_configuration" name="Configuración" parent="activos_fijos.menu_root" groups="group_activos_fijos_administrator" sequence="3"/>
+
+      <menuitem id="activos_fijos_menu_move_journal" name="Asientos contables" parent="activos_fijos_menu_accounting" action="account.action_move_journal_line" sequence="3"/>
+      <menuitem id="activos_fijos_menu_models_asset" name="Modelos de activos" parent="activos_fijos_menu_configuration" action="account_asset.action_account_asset_model_form" sequence="3"/>
+
+<!--      <menuitem name="Activos fijos" id="activos_fijos.activofijo_menu" parent="activos_fijos.menu_root" action="activos_fijos.activofijo_action_window"/>-->
+<!--      <menuitem name="Grupos contables" id="activos_fijos.grupocontable_menu" parent="activos_fijos.menu_root"  action="activos_fijos.grupocontable_action_window" />-->
+<!--      <menuitem name="UFV" id="activos_fijos.ufv_menu" parent="activos_fijos.menu_root" action="activos_fijos.ufv_action_window"/>-->
+  </data>
+</odoo>
